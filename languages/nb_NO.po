@@ -1,0 +1,393 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sfu_theme v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-01-06 21:30:08+0000\n"
+"Last-Translator: admin <admin@localhost.local>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Norwegian-Nynorsk\n"
+"X-Poedit-Country: NORWAY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:15
+#@ sfu_theme
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Denne siden finnes ikke."
+
+#: 404.php:19
+#@ sfu_theme
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Det ser ut som ingenting ble funnet her. Kanskje du kan prøve en annen lenke eller et søk?"
+
+#: 404.php:27
+#@ sfu_theme
+msgid "Most Used Categories"
+msgstr "Oftest brukte kategorier"
+
+#. translators: %1$s: smiley
+#: 404.php:44
+#, php-format
+#@ sfu_theme
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Prøv å lete i månedsarkivene. %1$s"
+
+#: archive.php:27
+#, php-format
+#@ sfu_theme
+msgid "Author: %s"
+msgstr "Forfatter: %s"
+
+#: archive.php:30
+#, php-format
+#@ sfu_theme
+msgid "Day: %s"
+msgstr "Dag: %s"
+
+#: archive.php:33
+#, php-format
+#@ sfu_theme
+msgid "Month: %s"
+msgstr "Måned: %s"
+
+#: archive.php:33
+#@ sfu_theme
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:36
+#, php-format
+#@ sfu_theme
+msgid "Year: %s"
+msgstr "År: %s"
+
+#: archive.php:36
+#@ sfu_theme
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+#@ sfu_theme
+msgid "Asides"
+msgstr "Notiser"
+
+#: archive.php:42
+#@ sfu_theme
+msgid "Galleries"
+msgstr "Galleri"
+
+#: archive.php:45
+#@ sfu_theme
+msgid "Images"
+msgstr "Bilder"
+
+#: archive.php:48
+#@ sfu_theme
+msgid "Videos"
+msgstr "Videoer"
+
+#: archive.php:51
+#@ sfu_theme
+msgid "Quotes"
+msgstr "Sitater"
+
+#: archive.php:54
+#@ sfu_theme
+msgid "Links"
+msgstr "Lenker"
+
+#: archive.php:57
+#@ sfu_theme
+msgid "Statuses"
+msgstr "Statuser"
+
+#: archive.php:60
+#@ sfu_theme
+msgid "Audios"
+msgstr "Lydfiler"
+
+#: archive.php:63
+#@ sfu_theme
+msgid "Chats"
+msgstr "Samtaler"
+
+#: archive.php:66
+#: sidebar.php:17
+#@ sfu_theme
+msgid "Archives"
+msgstr "Arkiv"
+
+#: comments.php:30
+#, php-format
+#@ sfu_theme
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "En kommentar om &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommentarer om &ldquo;%2$s&rdquo;"
+
+#: comments.php:37
+#: comments.php:57
+#@ sfu_theme
+msgid "Comment navigation"
+msgstr "Kommentarnavigasjon"
+
+#: comments.php:38
+#: comments.php:58
+#@ sfu_theme
+msgid "&larr; Older Comments"
+msgstr "&larr; Eldre kommentarer"
+
+#: comments.php:39
+#: comments.php:59
+#@ sfu_theme
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer &rarr;"
+
+#: comments.php:69
+#@ sfu_theme
+msgid "Comments are closed."
+msgstr "Kommentarfeltet er stengt."
+
+#: content-none.php:13
+#@ sfu_theme
+msgid "Nothing Found"
+msgstr "Ingenting funnet"
+
+#: content-none.php:19
+#, php-format
+#@ sfu_theme
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Klar til å publisere ditt første innlegg? <a href=\"%1$s\">Start her</a>."
+
+#: content-none.php:23
+#@ sfu_theme
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Beklager, men ingenting passet dine kriterier. Vennligst prøv igjen med andre søkeord."
+
+#: content-none.php:28
+#@ sfu_theme
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Det ser ikke ut til at vi finner det du leter etter. Kanskje et søk vil hjelpe."
+
+#: content-page.php:18
+#: content-single.php:20
+#: content.php:27
+#@ sfu_theme
+msgid "Pages:"
+msgstr "Sider:"
+
+#: content-page.php:23
+#: content-single.php:60
+#: content.php:61
+#: inc/template-tags.php:137
+#: inc/template-tags.php:156
+#@ sfu_theme
+msgid "Edit"
+msgstr "Rediger"
+
+#. translators: used between list items, there is a space after the comma
+#: content-single.php:29
+#: content-single.php:32
+#: content.php:38
+#: content.php:48
+#@ sfu_theme
+msgid ", "
+msgstr ","
+
+#: content-single.php:37
+#, php-format
+#@ sfu_theme
+msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dette innlegget er merket med %2$s. Bokmerk <a href=\"%3$s\" rel=\"bookmark\">lenken</a>."
+
+#: content-single.php:39
+#, php-format
+#@ sfu_theme
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Bokmerk <a href=\"%3$s\" rel=\"bookmark\">lenken</a>."
+
+#: content-single.php:45
+#, php-format
+#@ sfu_theme
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dette innlegget ble lagt i %1$s og merket %2$s. Bokmerk <a href=\"%3$s\" rel=\"bookmark\">lenken</a>."
+
+#: content-single.php:47
+#, php-format
+#@ sfu_theme
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dette innlegget ble lagt i %1$s. Bokmerk <a href=\"%3$s\" rel=\"bookmark\">lenken</a>."
+
+#: content.php:24
+#@ sfu_theme
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Les videre <span class=\"meta-nav\">&rarr;</span>"
+
+#: content.php:42
+#, php-format
+#@ sfu_theme
+msgid "Posted in %1$s"
+msgstr "Skrevet i %1$s"
+
+#: content.php:52
+#, php-format
+#@ sfu_theme
+msgid "Tagged %1$s"
+msgstr "Merket %1$s"
+
+#: content.php:58
+#@ sfu_theme
+msgid "Leave a comment"
+msgstr "Skriv en kommentar"
+
+#: content.php:58
+#@ sfu_theme
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: content.php:58
+#@ sfu_theme
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: functions.php:45
+#@ sfu_theme
+msgid "Primary Menu"
+msgstr "Hovedmeny"
+
+#: functions.php:65
+#@ sfu_theme
+msgid "Sidebar"
+msgstr "Marg"
+
+#: header.php:31
+#@ sfu_theme
+msgid "Menu"
+msgstr "Meny"
+
+#: header.php:32
+#@ sfu_theme
+msgid "Skip to content"
+msgstr "Hopp til innhold"
+
+#: inc/extras.php:63
+#, php-format
+#@ sfu_theme
+msgid "Page %s"
+msgstr "Side %s"
+
+#: inc/template-tags.php:79
+#@ sfu_theme
+msgid "Posts navigation"
+msgstr "Innleggsnavigasjon"
+
+#: inc/template-tags.php:83
+#@ sfu_theme
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Eldre innlegg"
+
+#: inc/template-tags.php:87
+#@ sfu_theme
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyere innlegg <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:112
+#@ sfu_theme
+msgid "Post navigation"
+msgstr "Innleggsnavigasjon"
+
+#: inc/template-tags.php:115
+#, php-format
+#@ sfu_theme
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: inc/template-tags.php:116
+#, php-format
+#@ sfu_theme
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:137
+#@ sfu_theme
+msgid "Pingback:"
+msgstr "Tilbakeping::"
+
+#: inc/template-tags.php:147
+#, php-format
+#@ sfu_theme
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">sier:</span>"
+
+#: inc/template-tags.php:153
+#, php-format
+#@ sfu_theme
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s klokken %2$s"
+
+#: inc/template-tags.php:160
+#@ sfu_theme
+msgid "Your comment is awaiting moderation."
+msgstr "Your comment is awaiting moderation."
+
+#: inc/template-tags.php:201
+#, php-format
+#@ sfu_theme
+msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr "<span class=\"posted-on\">Skrevet %1$s</span><span class=\"byline\"> av %2$s</span>"
+
+#: search.php:16
+#, php-format
+#@ sfu_theme
+msgid "Search Results for: %s"
+msgstr "Søkeresultater for: %s"
+
+#: searchform.php:10
+#@ sfu_theme
+msgctxt "label"
+msgid "Search for:"
+msgstr "Søk etter:"
+
+#: searchform.php:11
+#@ sfu_theme
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Søk &hellip;"
+
+#: searchform.php:13
+#@ sfu_theme
+msgctxt "submit button"
+msgid "Search"
+msgstr "Søk"
+
+#: sidebar.php:24
+#@ sfu_theme
+msgid "Meta"
+msgstr "Meta"
+
+#: footer.php:16
+#@ sfu_theme
+msgid "Built on WordPress by"
+msgstr "Bygget på Wordpress av"
+
+#: footer.php:26
+#@ sfu_theme
+msgid "Back"
+msgstr "Tilbake"
+
