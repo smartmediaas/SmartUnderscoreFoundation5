@@ -1,7 +1,10 @@
 SmartUnderscoreFoundation5
 ==========================
 
-Wordpress theme based on _Underscore and Zurb's Foundation 5
+Wordpress theme based on Underscores and Zurb's Foundation 5
+
+http://underscores.me/
+http://foundation.zurb.com/
 
 _s
 ===
