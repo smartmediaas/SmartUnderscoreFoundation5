@@ -1,0 +1,4 @@
+html a, html p, html h1, html h2, html h3, html h4, html h6, html ul, html li {
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3) !important;
+}

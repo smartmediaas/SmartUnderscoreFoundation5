@@ -2,7 +2,6 @@ SmartUnderscoreFoundation5
 ==========================
 
 Wordpress theme based on _Underscore and Zurb's Foundation 5
-<<<<<<< HEAD
 
 _s
 ===
@@ -48,4 +47,3 @@ Now you're ready to go! The next step is easy to say, but harder to do: make an 
 
 Good luck!
 =======
->>>>>>> 73f518470d9b11eb64c03bf4a228b95d60f30496

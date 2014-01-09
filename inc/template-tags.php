@@ -64,6 +64,35 @@ function sfu_theme_pagination($pages = '', $range = 2)
 endif;
 
 if ( ! function_exists( 'sfu_theme_paging_nav' ) ) :
+
+
+if ( ! function_exists( 'sfu_img' ) ) :
+/**
+ * Custom image retriever.
+ * Will automatically retrieve images from the theme images folder
+ */ 
+function sfu_img($imgName, $imgParam=''){
+    if($imgParam == 'url'){
+        $imgReturn = get_bloginfo('stylesheet_directory').'/images/'.$imgName;
+    }elseif($imgParam){
+        $imgReturn = '<img id="'.$imgParam.'" src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" title="'.$imgName.'" />';
+    }else{
+        $imgReturn = '<img src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" title="'.$imgName.'" />';
+    }
+    echo $imgReturn;
+}
+endif;
+
+if ( ! function_exists( 'sfu_clear' ) ) :
+/**
+ * Custom clear fix.
+ * What it says on the box
+ */
+function sfu_clear(){
+    echo '<div class="sfu-clear" style="clear:both;"></div>';
+}
+endif;
+
 /**
  * Display navigation to next/previous set of posts when applicable.
  *

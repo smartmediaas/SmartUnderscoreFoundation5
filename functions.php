@@ -76,12 +76,20 @@ add_action( 'widgets_init', 'sfu_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function sfu_theme_scripts() {
-	wp_enqueue_style( 'sfu_theme-style', get_stylesheet_uri() );
+	/* stylesheets */
+	wp_enqueue_style( 'default-style', get_template_directory_uri() . '/css/default.css' );
 	
 	wp_enqueue_style( 'normalize-style', get_template_directory_uri() . '/css/normalize.css' );
 	
 	wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/foundation.min.css' );
+	
+	wp_enqueue_style( 'sfu_theme-style', get_stylesheet_uri() );
+	
+	//wp_enqueue_style( 'foundicons', get_template_directory_uri() . '/fonts/foundation-icons.css' );
+	
+	//wp_enqueue_style( 'foundiconsie', get_template_directory_uri() . '/css/general_foundicons_ie7.css' );
 
+    /* scripts */
 	wp_enqueue_script( 'jquery');
 	
 	wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/js/foundation.min.js', array('jquery'), false, true);
