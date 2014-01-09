@@ -1,7 +1,8 @@
 <?php 
-/*
-http://codex.wordpress.org/Function_Reference/wp_nav_menu
-*/
+/**
+ * Customize walker to work with Foundation Top Bar
+ * http://codex.wordpress.org/Function_Reference/wp_nav_menu
+ */
  
 // top bar
 function foundation_top_bar() {
@@ -21,9 +22,9 @@ function foundation_top_bar() {
 } // end right top bar
 
 
-/*
-Customize the output of menus for Foundation top bar classes
-*/
+/**
+ * Customize the output of menus for Foundation top bar classes
+ */
  
 class top_bar_walker extends Walker_Nav_Menu {
  

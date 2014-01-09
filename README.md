@@ -6,6 +6,16 @@ Wordpress theme based on Underscores and Zurb's Foundation 5
 http://underscores.me/
 http://foundation.zurb.com/
 
+
+SmartUnderscoreFoundation5
+--------------------------
+Template tags
+
+sfu_img - retrieves images from folder
+sfu_clear - clearfix
+sfu_theme_pagination - Foundation pagination
+
+
 _s
 ===
 
