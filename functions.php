@@ -79,10 +79,6 @@ function sfu_theme_scripts() {
 	/* stylesheets */
 	wp_enqueue_style( 'default-style', get_template_directory_uri() . '/css/default.css' );
 	
-	wp_enqueue_style( 'normalize-style', get_template_directory_uri() . '/css/normalize.css' );
-	
-	wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/foundation.min.css' );
-	
 	wp_enqueue_style( 'sfu_theme-style', get_stylesheet_uri() );
 	
 	//wp_enqueue_style( 'foundicons', get_template_directory_uri() . '/fonts/foundation-icons.css' );
