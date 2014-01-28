@@ -24,17 +24,8 @@ and Blueprint http://www.blueprintcss.org/
 
 // Bourbon Mixin Library
 @import 'bourbon';
-
-/* =Normalize
-------------------------------------------*/
-@import 'scss/normalize';
-
-
-// /* =Foundation Modifiers
-// ------------------------------------------*/
-$topbar-bg-color: #111;
-
-
+// Custom Mixins
+@import 'mixins';
 
 /* =Fonts
 ----------------------------------------------- */
@@ -50,7 +41,50 @@ $topbar-bg-color: #111;
 
 /* =Menu
 ----------------------------------------------- */
-
+.main-navigation {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        li {
+            float: left;
+            position: relative;
+             a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 0.5em 0 0.5em 1em;
+            }
+            &.current-menu-ancestor > a,
+            &.current-menu-parent > a,
+            &.current-menu-item > a,
+            &:hover > a {
+                // styles here
+            }
+            &:hover > ul {
+            	display: block;
+            }
+        }
+        ul {
+            -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+            -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+            box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+            background: #dddddd;
+            display: none;
+            float: left;
+            position: absolute;
+                top: 2em;
+                left: 0;
+            z-index: 99999;
+            a {
+                    width: 200px;
+            }
+            ul {
+                    left: 100%;
+                    top: 0;
+            }
+        }
+    }
+}
 
 
 /* =Content
@@ -91,8 +125,3 @@ $topbar-bg-color: #111;
 /* Large breakpoint 1024px */
 @media only screen and (min-width: 1025px) {
 }
-
-/* =Foundation
-------------------------------------------*/
-@import 'scss/foundation';
-
