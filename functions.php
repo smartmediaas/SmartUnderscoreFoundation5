@@ -133,3 +133,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load custom Foundation menu walker.
  */
 require_once get_template_directory() . '/inc/foundation-walker.php';
+
+/**
+ * Load custom image resizer by Matthew Ruddy https://github.com/matthewruddy/wordpress-timthumb-alternative
+ */
+// require_once get_template_directory() . '/inc/image-resizer.php';

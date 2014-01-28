@@ -25,7 +25,7 @@
             custom_back_text: true,
             back_text: "<?php _e('Back', 'sfu_theme'); ?>",
             scrolltop: false,
-            mobile_show_parent_link: false,
+            mobile_show_parent_link: true,
         });
     });
 </script>
