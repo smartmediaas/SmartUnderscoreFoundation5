@@ -21,68 +21,107 @@ Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
-/* =Project mixins
------------------------------------------------ */
+
+// Bourbon Mixin Library
+@import 'bourbon';
+// Custom Mixins
+@import 'mixins';
+
 /* =Fonts
 ----------------------------------------------- */
+
+
+
 /* =Global
 ----------------------------------------------- */
-#page {
-  background: #fff;
+#page{
+    background: #fff;
 }
+
 
 /* =Menu
 ----------------------------------------------- */
-.main-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
+.main-navigation {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        li {
+            float: left;
+            position: relative;
+             a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 0.5em 0 0.5em 1em;
+            }
+            &.current-menu-ancestor > a,
+            &.current-menu-parent > a,
+            &.current-menu-item > a,
+            &:hover > a {
+                // styles here
+            }
+            &:hover > ul {
+            	display: block;
+            }
+        }
+        ul {
+            -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+            -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+            box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+            background: #dddddd;
+            display: none;
+            float: left;
+            position: absolute;
+                top: 2em;
+                left: 0;
+            z-index: 99999;
+            a {
+                    width: 200px;
+            }
+            ul {
+                    left: 100%;
+                    top: 0;
+            }
+        }
+    }
 }
-.main-navigation ul li {
-  float: left;
-  position: relative;
-}
-.main-navigation ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 0.5em 0 0.5em 1em;
-}
-.main-navigation ul li:hover > ul {
-  display: block;
-}
-.main-navigation ul ul {
-  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  background: #dddddd;
-  display: none;
-  float: left;
-  position: absolute;
-  top: 2em;
-  left: 0;
-  z-index: 99999;
-}
-.main-navigation ul ul a {
-  width: 200px;
-}
-.main-navigation ul ul ul {
-  left: 100%;
-  top: 0;
-}
+
 
 /* =Content
 ----------------------------------------------- */
+
+
+
 /* =Asides
 ----------------------------------------------- */
+
+
+
 /* =Media
 ----------------------------------------------- */
+
+
+
 /* =Navigation
 ----------------------------------------------- */
+
+
+
 /* =Comments
 ----------------------------------------------- */
+
+
+
 /* =Widgets
 ----------------------------------------------- */
+
+
 /* =Media Queries
 ------------------------------------------*/
 /* Medium breakpoint 640px */
+@media only screen and (min-width: 641px) {
+
+}
 /* Large breakpoint 1024px */
+@media only screen and (min-width: 1025px) {
+}
