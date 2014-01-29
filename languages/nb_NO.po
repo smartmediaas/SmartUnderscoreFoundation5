@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: sfu_theme v1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-28 14:08:56+0000\n"
+"PO-Revision-Date: 2014-01-29 14:34:45+0000\n"
 "Last-Translator: admin <admin@localhost.local>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -275,7 +275,6 @@ msgstr "Marg"
 
 #: header.php:42
 #: header.php:62
-#@ sfy_theme
 #@ sfu_theme
 msgid "Menu"
 msgstr "Meny"
@@ -397,4 +396,41 @@ msgstr "Tilbake"
 #@ sfu_theme
 msgid "General Information"
 msgstr "Generell info"
+
+#: inc/image-resizer.php:42
+#: inc/image-resizer.php:175
+#@ wta
+msgid "No image URL has been entered."
+msgstr ""
+
+#: inc/image-resizer.php:76
+#: inc/image-resizer.php:210
+#@ wta
+msgid "Image is BMP. Please use either JPG or PNG."
+msgstr ""
+
+#: inc/image-resizer.php:238
+#@ wta
+msgid "Failed to get $file_path information using \"@getimagesize\"."
+msgstr ""
+
+#: inc/image-resizer.php:281
+#@ wta
+msgid "Resize path invalid (GIF)"
+msgstr ""
+
+#: inc/image-resizer.php:285
+#@ wta
+msgid "Resize path invalid (PNG)."
+msgstr ""
+
+#: inc/image-resizer.php:293
+#@ wta
+msgid "Resize path invalid (JPG)."
+msgstr ""
+
+#: inc/image-resizer.php:308
+#@ wta
+msgid "Failed to get $dest_file_name (resized image) info via @getimagesize"
+msgstr ""
 
