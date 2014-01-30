@@ -39,7 +39,7 @@ if ( isset( $wp_version ) && version_compare( $wp_version, '3.5' ) >= 0 ) {
 		global $wpdb;
 
 		if ( empty( $url ) )
-			return new WP_Error( 'no_image_url', __( 'No image URL has been entered.','wta' ), $url );
+			return new WP_Error( 'no_image_url', __( 'No image URL has been entered.','sfu_theme' ), $url );
 
 		// Get default size from database
 		$width = ( $width )  ? $width : get_option( 'thumbnail_size_w' );
@@ -73,7 +73,7 @@ if ( isset( $wp_version ) && version_compare( $wp_version, '3.5' ) >= 0 ) {
 		$name = wp_basename( $file_path, ".$ext" );
 
 	        if ( 'bmp' == $ext ) {
-			return new WP_Error( 'bmp_mime_type', __( 'Image is BMP. Please use either JPG or PNG.','wta' ), $url );
+			return new WP_Error( 'bmp_mime_type', __( 'Image is BMP. Please use either JPG or PNG.','sfu_theme' ), $url );
 		}
 
 		// Suffix applied to filename
@@ -172,7 +172,7 @@ else {
 		global $wpdb;
 
 		if ( empty( $url ) )
-			return new WP_Error( 'no_image_url', __( 'No image URL has been entered.','wta' ), $url );
+			return new WP_Error( 'no_image_url', __( 'No image URL has been entered.','sfu_theme' ), $url );
 
 		// Bail if GD Library doesn't exist
 		if ( !extension_loaded('gd') || !function_exists('gd_info') )
@@ -207,7 +207,7 @@ else {
 		$name = wp_basename( $file_path, ".$ext" );
 
 	        if ( 'bmp' == $ext ) {
-			return new WP_Error( 'bmp_mime_type', __( 'Image is BMP. Please use either JPG or PNG.','wta' ), $url );
+			return new WP_Error( 'bmp_mime_type', __( 'Image is BMP. Please use either JPG or PNG.','sfu_theme' ), $url );
 		}
 
 		// Suffix applied to filename
@@ -235,7 +235,7 @@ else {
 			// Get the current image dimensions and type
 			$size = @getimagesize( $file_path );
 			if ( !$size )
-				return new WP_Error( 'file_path_getimagesize_failed', __( 'Failed to get $file_path information using "@getimagesize".','wta'), $file_path );
+				return new WP_Error( 'file_path_getimagesize_failed', __( 'Failed to get $file_path information using "@getimagesize".','sfu_theme'), $file_path );
 			list( $orig_width, $orig_height, $orig_type ) = $size;
 			
 			// Create new image
@@ -278,11 +278,11 @@ else {
 			// Check the image is the correct file type
 			if ( IMAGETYPE_GIF == $orig_type ) {
 				if ( !imagegif( $new_image, $dest_file_name ) )
-					return new WP_Error( 'resize_path_invalid', __( 'Resize path invalid (GIF)','wta' ) );
+					return new WP_Error( 'resize_path_invalid', __( 'Resize path invalid (GIF)','sfu_theme' ) );
 			}
 			elseif ( IMAGETYPE_PNG == $orig_type ) {
 				if ( !imagepng( $new_image, $dest_file_name ) )
-					return new WP_Error( 'resize_path_invalid', __( 'Resize path invalid (PNG).','wta' ) );
+					return new WP_Error( 'resize_path_invalid', __( 'Resize path invalid (PNG).','sfu_theme' ) );
 			}
 			else {
 
@@ -290,7 +290,7 @@ else {
 				if ( 'jpg' != $ext && 'jpeg' != $ext )
 					$dest_file_name = "{$dir}/{$name}-{$suffix}.jpg";
 				if ( !imagejpeg( $new_image, $dest_file_name, apply_filters( 'resize_jpeg_quality', 90 ) ) )
-					return new WP_Error( 'resize_path_invalid', __( 'Resize path invalid (JPG).','wta' ) );
+					return new WP_Error( 'resize_path_invalid', __( 'Resize path invalid (JPG).','sfu_theme' ) );
 
 			}
 
@@ -305,7 +305,7 @@ else {
 			// Get some information about the resized image
 			$new_size = @getimagesize( $dest_file_name );
 			if ( !$new_size )
-				return new WP_Error( 'resize_path_getimagesize_failed', __( 'Failed to get $dest_file_name (resized image) info via @getimagesize','wta' ), $dest_file_name );
+				return new WP_Error( 'resize_path_getimagesize_failed', __( 'Failed to get $dest_file_name (resized image) info via @getimagesize','sfu_theme' ), $dest_file_name );
 			list( $resized_width, $resized_height, $resized_type ) = $new_size;
 
 			// Get the new image URL
