@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Fullwidth
+ * Template Name: Fullbreddemal
  * The template for displaying fullwidth pages.
  *
  * This is the template that displays all pages by default.
