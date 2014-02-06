@@ -75,7 +75,7 @@ function sfu_img($imgName, $imgParam=''){
     if($imgParam == 'url'){
         $imgReturn = get_bloginfo('stylesheet_directory').'/images/'.$imgName;
     }elseif($imgParam){
-        $imgReturn = '<img id="'.$imgParam.'" src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" title="'.$imgName.'" />';
+        $imgReturn = '<img class="'.$imgParam.'" src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" title="'.$imgName.'" />';
     }else{
         $imgReturn = '<img src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" title="'.$imgName.'" />';
     }
