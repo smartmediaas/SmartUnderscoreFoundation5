@@ -4,6 +4,7 @@
 @import '../mixins';
 @import '../scss/foundation/functions';
 
+
 /* =Foundation modifiers
 ------------------------------------------*/
 $topbar-bg-color: #333;
@@ -11,8 +12,6 @@ $topbar-bg-color: #333;
 $topbar-menu-link-color-toggled: #fff;
 $topbar-menu-icon-color-toggled: #333;
 
-
-
-/* =Import Foundation SASS 
+/* =Import Foundation SASS
 ------------------------------------------*/
 @import '../scss/foundation';
