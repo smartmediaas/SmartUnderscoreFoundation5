@@ -22,7 +22,14 @@
 if (strpos($_SERVER['HTTP_USER_AGENT'], "Windows", 0) !== FALSE) { ?>
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri() . '/css/windows-aliasing.css'; ?>" />
 <?php } ?>
-
+<!-- Respond.js script on local server -->
+<script src="<?php echo get_template_directory_uri() . '/respond/respond.src.js'; ?>"></script>
+<!-- Respond.js proxy on external server -->
+<link href="<?php echo get_template_directory_uri() . '/respond/respond-proxy.html'; ?>" id="respond-proxy" rel="respond-proxy" />
+<!-- Respond.js redirect location on local server -->
+<link href="<?php echo get_template_directory_uri() . '/respond/respond.proxy.gif'; ?>" id="respond-redirect" rel="respond-redirect" />
+<!-- Respond.js proxy script on local server -->
+<script src="<?php echo get_template_directory_uri() . '/respond/respond.proxy.js'; ?>"></script>
 <?php wp_head(); ?>
 </head>
 
